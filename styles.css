@@ -235,6 +235,22 @@ blockquote span {
   flex-direction: column;
 }
 .placeholder-block p { margin: auto 0; color: var(--muted); }
+.programme {
+  margin: 2rem 0 0 70px;
+  padding: 1.6rem;
+  border: 1px solid var(--line);
+  background: var(--bg);
+}
+.programme h3 { margin: 0 0 1.2rem; font-size: 1.3rem; }
+.programme-list { margin: 0; padding: 0; list-style: none; }
+.programme-list li {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1rem;
+  padding: .9rem 0;
+  border-top: 1px solid var(--line);
+}
+.programme-list time { color: var(--muted); font-weight: 600; }
 
 .organizer-grid {
   display: grid;
@@ -284,6 +300,8 @@ footer { border-top: 1px solid var(--line); }
   h1 { font-size: clamp(4rem, 20vw, 6rem); }
   .meta-row, .speaker-columns, .organizer-grid, .about-grid { grid-template-columns: 1fr; }
   .about-grid, .speaker-columns, .organizer-grid { margin-left: 0; gap: 1rem; }
+  .programme { margin-left: 0; }
+  .programme-list li { grid-template-columns: 1fr; gap: .2rem; }
   .section-heading { grid-template-columns: 42px 1fr; }
   .meta-row { gap: 1px; }
   .universities { gap: 1rem; }
