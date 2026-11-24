@@ -294,6 +294,54 @@ footer { border-top: 1px solid var(--line); }
 }
 .footer-inner p { margin: 0; }
 
+.funding {
+  padding: 1.5rem 0 2rem;
+  border-top: 1px solid var(--line);
+}
+.funding-label {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: .74rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.funding-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem 2.5rem;
+}
+.funding-logos img {
+  display: block;
+  width: auto;
+  max-width: min(180px, 38vw);
+  height: 54px;
+  object-fit: contain;
+}
+
+.edition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-left: 70px;
+}
+.edition-card {
+  padding: 1.7rem;
+  border: 1px solid var(--line);
+  background: var(--bg);
+}
+.edition-card h3 { margin: .45rem 0 .55rem; font-size: 1.55rem; }
+.edition-card p { margin: 0 0 1rem; color: var(--muted); }
+.edition-card a { font-weight: 600; text-decoration-color: var(--line); }
+.edition-card a:hover { color: var(--accent); }
+
+@media (max-width: 760px) {
+  .edition-grid { margin-left: 0; }
+}
+
 @media (max-width: 760px) {
   .nav-links { display: none; }
   .hero-inner { padding-top: 3.6rem; }
